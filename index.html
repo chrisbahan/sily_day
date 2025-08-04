@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Graduation Surprise for Sil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Music -->
+<audio id="bg-music" loop>
+  <source src="[STATION] TAEYEON 태연 'Happy' Summer Version Live Video.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="document.getElementById('bg-music').play()">▶ Play Music</button>
+
+  <div class="container">
+    <div class="intro">
+      <h1>☕ It started in a Café...</h1>
+    </div>
+
+    <div class="message">
+      <h2>Then came the battles in Dragon Nest 🐉</h2>
+      <p>Through dungeons, laughs, and quests...  
+         Our friendship became unforgettable.</p>
+    </div>
+
+    <div class="grad-section">
+      <h2>🎓 Congratulations, Sil!</h2>
+      <p>You’ve completed another chapter —  
+         and we’re so proud of the person you’ve become 🌟</p>
+      <button onclick="showSurprise1()">🎁 Open Surprise 1</button>
+      <button onclick="showSurprise2()">🎁 Open Surprise 2</button>
+      <button onclick="showSurprise3()">🎉 Final Surprise</button>
+    </div>
+
+    <div id="surprise1" class="hidden surprise-box fade-in">
+      <h3>💖 From Zai & Kyle</h3>
+      <p>You made every game more fun and every day more special.  
+         Thank you for being you 💐</p>
+      <img src="DN Contest.png" alt="DN Contest">
+    </div>
+
+    <div id="surprise2" class="hidden surprise-box fade-in">
+      <h3>🎮 Our DN Days</h3>
+      <p>Win or lose, we had the best team — because we had you.  
+         Let’s keep the adventures going ✨</p>
+      <img src="DN.png" alt="Dragon Nest Team">
+    </div>
+
+    <div id="surprise3" class="hidden surprise-box fade-in">
+      <h3>🌈 Onward</h3>
+      <p>Wherever you go next, take this joy and strength with you.  
+         We believe in you always 💗</p>
+      <img src="DN2.jpg" alt="Graduation Moment" />
+    </div>
+  </div>
+
+  <canvas id="confetti"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
